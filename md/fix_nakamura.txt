@@ -1,0 +1,9 @@
+p2 (1) k -> kappa
+- \alpha_h k u^*
++ \alpha_h \kappa u^*
+
+p2 (3) mu -> u, overbar on flux
+- \frac{\overline{\theta_v} \mu^{*3}}{\kappa g w' \theta_v'}
++ \frac{\overline{\theta_v} u^{*3}}{\kappa g \overline{w' \theta_v'}}
+
+ok p3 (7) matches crop

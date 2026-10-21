@@ -1,0 +1,403 @@
+{
+ "stats": {
+  "pages": 13,
+  "blocks": 133,
+  "inline_math": 37,
+  "display_math": 17,
+  "text_compared": 75,
+  "equations_compared": 12,
+  "equations_unverifiable": 11,
+  "inline_compared": 8
+ },
+ "counts": {
+  "high": 3,
+  "low": 11,
+  "visual": 7
+ },
+ "pages_without_text_layer": [],
+ "issues": [
+  {
+   "page": 3,
+   "block": "/page/2/Equation/3",
+   "type": "Equation",
+   "box": [
+    99.3,
+    549.3,
+    415.9,
+    534.9
+   ],
+   "confidence": "high",
+   "reason": "symbols PDF[l] LaTeX[s]",
+   "latex": "\\bar{T}_s = \\bar{T}(1 + 0.5\\bar{q})",
+   "mineru": {
+    "verdict": "closer",
+    "latex": "\\overline {{T}} _ {s} = \\overline {{T}} (1 + 0. 5 1 \\bar {q})"
+   },
+   "crop": "crops/p003_Equation_3.png"
+  },
+  {
+   "page": 9,
+   "block": "/page/8/Text/9",
+   "type": "Text",
+   "box": [
+    51.0,
+    164.2,
+    415.4,
+    49.2
+   ],
+   "confidence": "high",
+   "reason": "text Marker[small] PDF[smail athe] (similarity 97)",
+   "crop": "crops/p009_Text_9.png"
+  },
+  {
+   "page": 12,
+   "block": "/page/11/Equation/11",
+   "type": "Equation",
+   "box": [
+    101.1,
+    136.8,
+    415.4,
+    116.8
+   ],
+   "confidence": "high",
+   "reason": "symbols PDF[0IIT] LaTeX[mwθ]",
+   "latex": "w_m = V \\sin \\theta \\quad (\\text{A4})",
+   "mineru": {
+    "verdict": "differs",
+    "latex": "w _ {m} = V \\sin \\theta"
+   },
+   "crop": "crops/p012_Equation_11.png"
+  },
+  {
+   "page": 2,
+   "block": "/page/1/Equation/7",
+   "type": "Equation",
+   "box": [
+    97.8,
+    363.9,
+    413.7,
+    333.9
+   ],
+   "reason": "box doesn't line up with PDF text",
+   "latex": "t_1 = \\frac{l}{c \\cos \\alpha + v_l}, \\quad t_2 = \\frac{l}{c \\cos \\alpha - v_l}, \\quad (1)",
+   "qa_confidence": null,
+   "confidence": "low",
+   "qa_visual": true,
+   "mineru": {
+    "verdict": "agree"
+   },
+   "crop": "crops/p002_Equation_7.png"
+  },
+  {
+   "page": 2,
+   "block": "/page/1/Equation/12",
+   "type": "Equation",
+   "box": [
+    100.2,
+    198.4,
+    414.3,
+    180.1
+   ],
+   "confidence": "low",
+   "reason": "symbols PDF[al] LaTeX[111α]",
+   "latex": "1/t_1 + 1/t_2 = (2c \\cos \\alpha)/l",
+   "qa_confidence": "high",
+   "mineru": {
+    "verdict": "agree"
+   },
+   "crop": "crops/p002_Equation_12.png"
+  },
+  {
+   "page": 2,
+   "block": "/page/1/Equation/14",
+   "type": "Equation",
+   "box": [
+    99.2,
+    160.1,
+    414.6,
+    141.0
+   ],
+   "confidence": "low",
+   "reason": "symbols PDF[y] LaTeX[γ]",
+   "latex": "c^2 = \\gamma RT(1 + 0.51q)",
+   "qa_confidence": "high",
+   "mineru": {
+    "verdict": "agree"
+   },
+   "crop": "crops/p002_Equation_14.png"
+  },
+  {
+   "page": 2,
+   "block": "/page/1/Text/16",
+   "type": "Text",
+   "box": [
+    51.9,
+    103.3,
+    413.7,
+    71.6
+   ],
+   "confidence": "low",
+   "reason": "text Marker[] PDF[] (similarity 67)",
+   "crop": "crops/p002_Text_16.png"
+  },
+  {
+   "page": 3,
+   "block": "/page/2/Equation/3",
+   "type": "Equation",
+   "box": [
+    99.3,
+    549.3,
+    415.9,
+    534.9
+   ],
+   "confidence": "low",
+   "reason": "accents differ: PDF[] LaTeX[¯ ¯ ¯]",
+   "latex": "\\bar{T}_s = \\bar{T}(1 + 0.5\\bar{q})",
+   "mineru": {
+    "verdict": "closer",
+    "latex": "\\overline {{T}} _ {s} = \\overline {{T}} (1 + 0. 5 1 \\bar {q})"
+   },
+   "crop": "crops/p003_Equation_3.png"
+  },
+  {
+   "page": 3,
+   "block": "/page/2/Equation/9",
+   "type": "Equation",
+   "box": [
+    97.9,
+    319.4,
+    414.0,
+    293.4
+   ],
+   "reason": "no usable PDF text",
+   "latex": "\\overline{w'T'_s} = \\overline{w'T'} + 0.51 \\overline{T} \\overline{w'q'} - 2 \\frac{\\overline{Tu}}{c^2} u' w' . \\quad (8)",
+   "qa_confidence": null,
+   "confidence": "low",
+   "qa_visual": true,
+   "mineru": {
+    "verdict": "agree"
+   },
+   "crop": "crops/p003_Equation_9.png"
+  },
+  {
+   "page": 4,
+   "block": "/page/3/Table/9",
+   "type": "Table",
+   "box": [
+    101.1,
+    146.4,
+    412.3,
+    56.0
+   ],
+   "confidence": "low",
+   "reason": "text Marker[] PDF[] (similarity 56)",
+   "crop": "crops/p004_Table_9.png"
+  },
+  {
+   "page": 6,
+   "block": "/page/5/Text/16",
+   "type": "Text",
+   "box": [
+    51.0,
+    256.5,
+    413.7,
+    165.5
+   ],
+   "confidence": "low",
+   "reason": "text Marker[] PDF[ote eaeutaad ustabe espectey] (similarity 96)",
+   "crop": "crops/p006_Text_16.png"
+  },
+  {
+   "page": 8,
+   "block": "/page/7/Equation/13",
+   "type": "Equation",
+   "box": [
+    98.7,
+    63.0,
+    414.5,
+    48.6
+   ],
+   "confidence": "low",
+   "reason": "symbols PDF[lp] LaTeX[Tnλρρ]",
+   "latex": "Q_n = \\rho C_p \\overline{w'T'} + \\rho \\lambda \\overline{w'q'} + G \\quad (11)",
+   "qa_confidence": "high",
+   "mineru": {
+    "verdict": "agree"
+   },
+   "crop": "crops/p008_Equation_13.png"
+  },
+  {
+   "page": 12,
+   "block": "/page/11/Equation/3",
+   "type": "Equation",
+   "box": [
+    98.3,
+    563.7,
+    412.6,
+    549.0
+   ],
+   "reason": "box doesn't line up with PDF text",
+   "latex": "u_m = V \\cos \\alpha",
+   "qa_confidence": null,
+   "confidence": "low",
+   "qa_visual": true,
+   "mineru": {
+    "verdict": "agree"
+   },
+   "crop": "crops/p012_Equation_3.png"
+  },
+  {
+   "page": 12,
+   "block": "/page/11/Equation/4",
+   "type": "Equation",
+   "box": [
+    98.3,
+    544.0,
+    412.6,
+    529.4
+   ],
+   "reason": "box doesn't line up with PDF text",
+   "latex": "v_m = V \\sin \\alpha",
+   "qa_confidence": null,
+   "confidence": "low",
+   "qa_visual": true,
+   "mineru": {
+    "verdict": "agree"
+   },
+   "crop": "crops/p012_Equation_4.png"
+  },
+  {
+   "page": 2,
+   "block": "/page/1/Equation/17",
+   "type": "Equation",
+   "box": [
+    99.2,
+    81.4,
+    413.8,
+    52.7
+   ],
+   "visual": true,
+   "reason": "no usable PDF text",
+   "latex": "T_s = \\frac{l^2}{4\\pi i \\rho} \\left\\{ \\frac{1}{4} + \\frac{1}{4} \\right\\}^2. \\quad (4)",
+   "mineru": {
+    "verdict": "differs",
+    "latex": "T _ {s} = \\frac {l ^ {2}}{4 \\gamma R} \\left\\{\\frac {1}{t _ {1}} + \\frac {1}{t _ {2}} \\right\\} ^ {2}."
+   },
+   "crop": "crops/p002_Equation_17.png"
+  },
+  {
+   "page": 3,
+   "block": "/page/2/Equation/5",
+   "type": "Equation",
+   "box": [
+    99.3,
+    528.2,
+    414.2,
+    493.8
+   ],
+   "visual": true,
+   "reason": "box doesn't line up with PDF text",
+   "latex": "T'_s = T' + 0.51q'\\bar{T} - \\frac{2\\bar{T}}{c^2}\\bar{v}_n v'_n. \\quad (6)",
+   "mineru": {
+    "verdict": "closer",
+    "latex": "T _ {s} ^ {\\prime} = T ^ {\\prime} + 0. 5 1 q ^ {\\prime} \\overline {{T}} - \\frac {2 \\overline {{T}}}{c ^ {2}} \\bar {v} _ {n} v _ {n} ^ {\\prime}."
+   },
+   "crop": "crops/p003_Equation_5.png"
+  },
+  {
+   "page": 3,
+   "block": "/page/2/Equation/8",
+   "type": "Equation",
+   "box": [
+    97.9,
+    397.4,
+    414.0,
+    333.1
+   ],
+   "visual": true,
+   "reason": "box doesn't line up with PDF text",
+   "latex": "\\sigma_{T_s}^2 \\equiv \\overline{T'_s}^2 = \\sigma_T^2 + 1.02\\overline{T} \\overline{q'T'} + (0.51)^2 \\overline{T} \\sigma_q^2 + 4 \\frac{\\overli…",
+   "mineru": {
+    "verdict": "differs",
+    "latex": "\\sigma_ {T _ {s}} ^ {2} \\equiv \\overline {{T _ {s} ^ {\\prime 2}}} = \\sigma_ {T} ^ {2} + 1. 0 2 \\overline {{T}} \\overline {{q ^ {\\prime} T ^ {\\prime}}} +   ^ {2} \\overline {{T}} \\sigma_ {q} ^ {2} + 4 \\frac {\\overline {{T}} ^ {2} \\overline {{u}} ^ {2}}{(\\overline {{c ^ {2}}}) ^ {2}} \\sigma_ {u} ^ {2} - \\frac {4 \\overline {{T}} \\bar {u}}{\\overline {{c ^ {2}}}} \\overline {{u ^ {\\prime} T ^ {\\prime}}} - 2. 0 4 \\frac {\\overline {{T}} ^ {2} \\bar {u}}{\\overline {{c ^ {2}}}} \\overline {{u ^ {\\prime} q ^ {\\prime}}},"
+   },
+   "crop": "crops/p003_Equation_8.png"
+  },
+  {
+   "page": 5,
+   "block": "/page/4/Equation/5",
+   "type": "Equation",
+   "box": [
+    100.1,
+    490.6,
+    416.4,
+    473.4
+   ],
+   "visual": true,
+   "reason": "no usable PDF text",
+   "latex": "\\sigma_{T_2} \\simeq \\sigma_T^2 + 1.02 \\, \\overline{T} \\, \\overline{q'} \\, \\overline{T'}. \\quad (9)",
+   "mineru": {
+    "verdict": "differs",
+    "latex": "\\sigma_ {T _ {3} ^ {2}} \\simeq \\sigma_ {T} ^ {2} + 1. 0 2 \\overline {{T}} \\overline {{q ^ {\\prime} T ^ {\\prime}}}."
+   },
+   "crop": "crops/p005_Equation_5.png"
+  },
+  {
+   "page": 7,
+   "block": "/page/6/Equation/6",
+   "type": "Equation",
+   "box": [
+    98.3,
+    130.0,
+    419.0,
+    101.6
+   ],
+   "visual": true,
+   "reason": "box doesn't line up with PDF text",
+   "latex": "\\overline{w'T_s} = \\overline{w'T'} \\left( 1 + \\frac{0.51\\bar{T}C_p}{\\lambda B} \\right) - 2 \\frac{\\bar{T}\\bar{u}}{\\bar{c}^2} u' w' \\quad (10)",
+   "mineru": {
+    "verdict": "differs",
+    "latex": "\\overline {{w ^ {\\prime} T _ {s} ^ {\\prime}}} = \\overline {{w ^ {\\prime} T ^ {\\prime}}} \\left(1 + \\frac {0 . 5 1 \\bar {T} C _ {p}}{\\lambda \\beta}\\right) - 2 \\frac {\\bar {T} \\bar {u}}{\\bar {c} ^ {2}} \\overline {{u ^ {\\prime} w ^ {\\prime}}}"
+   },
+   "crop": "crops/p007_Equation_6.png"
+  },
+  {
+   "page": 7,
+   "block": "/page/6/Equation/8",
+   "type": "Equation",
+   "box": [
+    96.9,
+    78.7,
+    180.2,
+    52.7
+   ],
+   "visual": true,
+   "reason": "no usable PDF text",
+   "latex": "\\beta = \\frac{C_p}{2} \\frac{\\overline{w' T'}}{\\overline{w' q'}}.",
+   "mineru": {
+    "verdict": "differs",
+    "latex": "\\beta = \\frac {C _ {p}}{\\lambda} \\overline {{w ^ {\\prime} T ^ {\\prime}}} / \\overline {{w ^ {\\prime} q ^ {\\prime}}}."
+   },
+   "crop": "crops/p007_Equation_8.png"
+  },
+  {
+   "page": 12,
+   "block": "/page/11/Equation/6",
+   "type": "Equation",
+   "box": [
+    85.7,
+    466.5,
+    413.7,
+    436.7
+   ],
+   "visual": true,
+   "reason": "box doesn't line up with PDF text",
+   "latex": "u_m = V \\{ -1.8 \\times 10^{-9} \\alpha^4 + 9.3 \\times 10^{-8} \\alpha^3 - 1.8 \\times 10^{-4} \\alpha^2 - 5.8 \\times 10^{-4} \\alpha + 1.0 \\} \\qu…",
+   "mineru": {
+    "verdict": "differs",
+    "latex": "u _ {m} = V \\left\\{- 1. 8 \\times 1 0 ^ {- 9} \\alpha^ {4} + 9. 3 \\times 1 0 ^ {- 8} \\alpha^ {3} - 1. 8 \\times 1 0 ^ {- 4} \\alpha^ {2} - 5. 8 \\times 1 0 ^ {- 4} \\alpha + 1. 0 \\right\\}"
+   },
+   "crop": "crops/p012_Equation_6.png"
+  }
+ ]
+}

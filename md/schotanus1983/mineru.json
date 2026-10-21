@@ -1,0 +1,179 @@
+{
+ "source_pdf": "D:\\MAIO\\BF00164332.pdf",
+ "pages": {
+  "1": [
+   {
+    "bbox": [
+     0.211,
+     0.469,
+     0.883,
+     0.513
+    ],
+    "latex": "t _ {1} = \\frac {l}{c \\cos \\alpha + v _ {l}}, \\quad t _ {2} = \\frac {l}{c \\cos \\alpha - v _ {l}},\\tag{1}"
+   },
+   {
+    "bbox": [
+     0.422,
+     0.567,
+     0.571,
+     0.648
+    ],
+    "latex": "\\begin{array}{c} \\vec {v} _ {l} \\\\ v _ {n} \\end{array} \\quad \\begin{array}{c} \\ell \\\\ t _ {1} \\\\ t _ {2} \\end{array}"
+   },
+   {
+    "bbox": [
+     0.214,
+     0.717,
+     0.882,
+     0.736
+    ],
+    "latex": "1 / t _ {1} + 1 / t _ {2} = (2 c \\cos \\alpha) / l.\\tag{2}"
+   },
+   {
+    "bbox": [
+     0.212,
+     0.774,
+     0.882,
+     0.793
+    ],
+    "latex": "c ^ {2} = \\gamma R T (1 + 0. 5 1 q),\\tag{3}"
+   },
+   {
+    "bbox": [
+     0.212,
+     0.891,
+     0.882,
+     0.934
+    ],
+    "latex": "T _ {s} = \\frac {l ^ {2}}{4 \\gamma R} \\left\\{\\frac {1}{t _ {1}} + \\frac {1}{t _ {2}} \\right\\} ^ {2}.\\tag{4}"
+   }
+  ],
+  "2": [
+   {
+    "bbox": [
+     0.212,
+     0.195,
+     0.885,
+     0.215
+    ],
+    "latex": "\\overline {{T}} _ {s} = \\overline {{T}} (1 + 0. 5 1 \\bar {q})\\tag{5}"
+   },
+   {
+    "bbox": [
+     0.213,
+     0.237,
+     0.883,
+     0.278
+    ],
+    "latex": "T _ {s} ^ {\\prime} = T ^ {\\prime} + 0. 5 1 q ^ {\\prime} \\overline {{T}} - \\frac {2 \\overline {{T}}}{c ^ {2}} \\bar {v} _ {n} v _ {n} ^ {\\prime}.\\tag{6}"
+   },
+   {
+    "bbox": [
+     0.209,
+     0.419,
+     0.725,
+     0.464
+    ],
+    "latex": "\\sigma_ {T _ {s}} ^ {2} \\equiv \\overline {{T _ {s} ^ {\\prime 2}}} = \\sigma_ {T} ^ {2} + 1. 0 2 \\overline {{T}} \\overline {{q ^ {\\prime} T ^ {\\prime}}} + (0. 5 1) ^ {2} \\overline {{T}} \\sigma_ {q} ^ {2} + 4 \\frac {\\overline {{T}} ^ {2} \\overline {{u}} ^ {2}}{(\\overline {{c ^ {2}}}) ^ {2}} \\sigma_ {u} ^ {2}"
+   },
+   {
+    "bbox": [
+     0.212,
+     0.476,
+     0.882,
+     0.518
+    ],
+    "latex": "- \\frac {4 \\overline {{T}} \\bar {u}}{\\overline {{c ^ {2}}}} \\overline {{u ^ {\\prime} T ^ {\\prime}}} - 2. 0 4 \\frac {\\overline {{T}} ^ {2} \\bar {u}}{\\overline {{c ^ {2}}}} \\overline {{u ^ {\\prime} q ^ {\\prime}}},\\tag{7}"
+   },
+   {
+    "bbox": [
+     0.209,
+     0.535,
+     0.881,
+     0.577
+    ],
+    "latex": "\\overline {{w ^ {\\prime} T _ {s} ^ {\\prime}}} = \\overline {{w ^ {\\prime} T ^ {\\prime}}} + 0. 5 1 \\overline {{T}} \\overline {{w ^ {\\prime} q ^ {\\prime}}} - 2 \\frac {\\overline {{T}} \\overline {{u}}}{\\overline {{c ^ {2}}}} \\overline {{u ^ {\\prime} w ^ {\\prime}}}.\\tag{8}"
+   }
+  ],
+  "4": [
+   {
+    "bbox": [
+     0.213,
+     0.283,
+     0.885,
+     0.305
+    ],
+    "latex": "\\sigma_ {T _ {3} ^ {2}} \\simeq \\sigma_ {T} ^ {2} + 1. 0 2 \\overline {{T}} \\overline {{q ^ {\\prime} T ^ {\\prime}}}.\\tag{9}"
+   }
+  ],
+  "6": [
+   {
+    "bbox": [
+     0.209,
+     0.818,
+     0.884,
+     0.86
+    ],
+    "latex": "\\overline {{w ^ {\\prime} T _ {s} ^ {\\prime}}} = \\overline {{w ^ {\\prime} T ^ {\\prime}}} \\left(1 + \\frac {0 . 5 1 \\bar {T} C _ {p}}{\\lambda \\beta}\\right) - 2 \\frac {\\bar {T} \\bar {u}}{\\bar {c} ^ {2}} \\overline {{u ^ {\\prime} w ^ {\\prime}}}\\tag{10}"
+   },
+   {
+    "bbox": [
+     0.207,
+     0.895,
+     0.385,
+     0.934
+    ],
+    "latex": "\\beta = \\frac {C _ {p}}{\\lambda} \\overline {{w ^ {\\prime} T ^ {\\prime}}} / \\overline {{w ^ {\\prime} q ^ {\\prime}}}."
+   }
+  ],
+  "7": [
+   {
+    "bbox": [
+     0.21,
+     0.916,
+     0.883,
+     0.937
+    ],
+    "latex": "Q _ {n} = \\rho C _ {p} \\overline {{w ^ {\\prime} T ^ {\\prime \\prime}}} + \\rho \\lambda \\overline {{w ^ {\\prime} q ^ {\\prime \\prime}}} + G\\tag{11}"
+   }
+  ],
+  "11": [
+   {
+    "bbox": [
+     0.211,
+     0.176,
+     0.882,
+     0.195
+    ],
+    "latex": "u _ {m} = V \\cos \\alpha\\tag{A1}"
+   },
+   {
+    "bbox": [
+     0.213,
+     0.204,
+     0.882,
+     0.224
+    ],
+    "latex": "v _ {m} = V \\sin {\\alpha}\\tag{A2}"
+   },
+   {
+    "bbox": [
+     0.182,
+     0.318,
+     0.882,
+     0.358
+    ],
+    "latex": "u _ {m} = V \\left\\{- 1. 8 \\times 1 0 ^ {- 9} \\alpha^ {4} + 9. 3 \\times 1 0 ^ {- 8} \\alpha^ {3} - 1. 8 \\times 1 0 ^ {- 4} \\alpha^ {2} - 5. 8 \\times 1 0 ^ {- 4} \\alpha + 1. 0 \\right\\}\\tag{A3}"
+   },
+   {
+    "bbox": [
+     0.216,
+     0.807,
+     0.885,
+     0.827
+    ],
+    "latex": "w _ {m} = V \\sin \\theta\\tag{A4}"
+   }
+  ]
+ }
+}

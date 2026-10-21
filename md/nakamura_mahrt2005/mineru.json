@@ -1,0 +1,121 @@
+{
+ "source_pdf": "D:\\MAIO\\atot-jtech1762_1.pdf",
+ "pages": {
+  "1": [
+   {
+    "bbox": [
+     0.135,
+     0.66,
+     0.487,
+     0.695
+    ],
+    "latex": "\\overline {{\\theta}} = \\overline {{\\theta}} _ {s} - \\frac {\\overline {{w ^ {\\prime} \\theta^ {\\prime}}}}{\\alpha_ {h} \\kappa u ^ {*}} \\left[ \\ln \\left(\\frac {z - d _ {o}}{z _ {o h}}\\right) - \\psi_ {h} \\left(\\frac {z - d _ {o}}{L}\\right) \\right],\\tag{1}"
+   },
+   {
+    "bbox": [
+     0.215,
+     0.881,
+     0.487,
+     0.9
+    ],
+    "latex": "u ^ {*} = (\\overline {{u ^ {\\prime} w ^ {\\prime}}} ^ {2} + \\overline {{v ^ {\\prime} w ^ {\\prime}}} ^ {2}) ^ {1 / 4},\\tag{2}"
+   },
+   {
+    "bbox": [
+     0.636,
+     0.153,
+     0.879,
+     0.19
+    ],
+    "latex": "L = - \\frac {\\overline {{\\theta_ {v}}} \\mu^ {* 3}}{\\kappa g \\overline {{w ^ {\\prime}}} \\theta_ {v} ^ {\\prime}}.\\tag{3}"
+   },
+   {
+    "bbox": [
+     0.648,
+     0.328,
+     0.879,
+     0.344
+    ],
+    "latex": "z = Z + d _ {o},\\tag{4}"
+   },
+   {
+    "bbox": [
+     0.601,
+     0.678,
+     0.879,
+     0.695
+    ],
+    "latex": "d _ {o \\text {estimated}} = d _ {o} + d _ {o \\text {error}},\\tag{5}"
+   },
+   {
+    "bbox": [
+     0.555,
+     0.771,
+     0.879,
+     0.788
+    ],
+    "latex": "z = d _ {o \\text {estimated}} + Z = d _ {o} + Z + d _ {o \\text {error}}.\\tag{6}"
+   }
+  ],
+  "2": [
+   {
+    "bbox": [
+     0.111,
+     0.552,
+     0.487,
+     0.651
+    ],
+    "latex": "\\begin{array}{l} \\overline {{\\theta}} (Z + d _ {o \\text {estimated}}) - \\overline {{\\theta}} (Z + d _ {o}) = \\\\ \\qquad - \\frac {\\overline {{w ^ {\\prime} \\theta^ {\\prime}}}}{\\alpha_ {h} \\kappa u ^ {*}} \\bigg [ \\ln \\bigg (\\frac {Z + d _ {o \\text {error}}}{z _ {o h}} \\bigg) - \\ln \\bigg (\\frac {Z}{z _ {o h}} \\bigg) \\\\ \\qquad - \\psi_ {h} \\bigg (\\frac {Z + d _ {o \\text {error}}}{L} \\bigg) + \\psi_ {h} \\bigg (\\frac {Z}{L} \\bigg) \\bigg ]. \\end{array}\\tag{7}"
+   }
+  ],
+  "5": [
+   {
+    "bbox": [
+     0.225,
+     0.385,
+     0.487,
+     0.401
+    ],
+    "latex": "\\overline {{S ^ {*} = 0 . 5 (S ^ {*} \\downarrow + S ^ {*} \\uparrow)}},\\tag{8}"
+   },
+   {
+    "bbox": [
+     0.132,
+     0.447,
+     0.487,
+     0.503
+    ],
+    "latex": "S ^ {*} \\downarrow = \\frac {\\text {Downward shortwave irradiance inside shield}}{\\text {Downward global shortwave irradiance outside shield}} \\times 1 0 0,\\tag{9}"
+   },
+   {
+    "bbox": [
+     0.139,
+     0.534,
+     0.487,
+     0.59
+    ],
+    "latex": "S ^ {*} \\uparrow = \\frac {\\text {Upward shortwave irradiance inside shield}}{\\text {Downward global shortwave irradiance outside shield}} \\times 1 0 0.\\tag{10}"
+   }
+  ],
+  "8": [
+   {
+    "bbox": [
+     0.242,
+     0.678,
+     0.487,
+     0.713
+    ],
+    "latex": "X = \\frac {\\mathrm{Rad}}{\\rho C _ {p} T _ {\\mathrm{HB}} U},\\tag{11}"
+   },
+   {
+    "bbox": [
+     0.196,
+     0.884,
+     0.487,
+     0.902
+    ],
+    "latex": "\\mathrm{RE} = C _ {0} + C _ {1} X + C _ {2} X ^ {2} \\dots ,\\tag{12}"
+   }
+  ]
+ }
+}

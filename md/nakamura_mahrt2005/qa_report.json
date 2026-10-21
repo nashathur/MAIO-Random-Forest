@@ -1,0 +1,474 @@
+{
+ "stats": {
+  "pages": 13,
+  "blocks": 183,
+  "inline_math": 106,
+  "display_math": 12,
+  "text_compared": 102,
+  "equations_compared": 12,
+  "equations_unverifiable": 4,
+  "inline_compared": 22
+ },
+ "counts": {
+  "high": 13,
+  "low": 13,
+  "visual": 2
+ },
+ "pages_without_text_layer": [],
+ "issues": [
+  {
+   "page": 1,
+   "block": "/page/0/LostText/0",
+   "type": "Text",
+   "box": [
+    40,
+    96.4,
+    572.0,
+    -1.9
+   ],
+   "confidence": "high",
+   "reason": "PDF text missing from Marker (9 words): reina affrc journal atmospheric and oceanic technology volume jtech",
+   "crop": "crops/p001_LostText_0.png"
+  },
+  {
+   "page": 3,
+   "block": "/page/2/LostText/0",
+   "type": "Text",
+   "box": [
+    40,
+    741.2,
+    572.0,
+    384.0
+   ],
+   "confidence": "high",
+   "reason": "PDF text missing from Marker (9 words): surface temperature journal and oceanic technology volume brought you",
+   "crop": "crops/p003_LostText_0.png"
+  },
+  {
+   "page": 4,
+   "block": "/page/3/LostText/0",
+   "type": "Text",
+   "box": [
+    40,
+    742.6,
+    572.0,
+    93.2
+   ],
+   "confidence": "high",
+   "reason": "PDF text missing from Marker (7 words): time few july amura and mahrt brought",
+   "crop": "crops/p004_LostText_0.png"
+  },
+  {
+   "page": 5,
+   "block": "/page/4/LostText/0",
+   "type": "Text",
+   "box": [
+    40,
+    742.6,
+    572.0,
+    93.2
+   ],
+   "confidence": "high",
+   "reason": "PDF text missing from Marker (8 words): outer top journal atmospheric and oceanic technology volume",
+   "crop": "crops/p005_LostText_0.png"
+  },
+  {
+   "page": 6,
+   "block": "/page/5/LostText/0",
+   "type": "Text",
+   "box": [
+    40,
+    744.1,
+    572.0,
+    21.6
+   ],
+   "confidence": "high",
+   "reason": "PDF text missing from Marker (7 words): solar noon july amura and mahrt brought",
+   "crop": "crops/p006_LostText_0.png"
+  },
+  {
+   "page": 7,
+   "block": "/page/6/LostText/0",
+   "type": "Text",
+   "box": [
+    40,
+    742.6,
+    572.0,
+    513.5
+   ],
+   "confidence": "high",
+   "reason": "PDF text missing from Marker (8 words): within bins journal atmospheric and oceanic technology volume",
+   "crop": "crops/p007_LostText_0.png"
+  },
+  {
+   "page": 8,
+   "block": "/page/7/LostText/0",
+   "type": "Text",
+   "box": [
+    40,
+    744.3,
+    572.0,
+    21.5
+   ],
+   "confidence": "high",
+   "reason": "PDF text missing from Marker (7 words): averaged together july amura and mahrt brought",
+   "crop": "crops/p008_LostText_0.png"
+  },
+  {
+   "page": 8,
+   "block": "/page/7/Text/3",
+   "type": "Text",
+   "box": [
+    66.7,
+    713.6,
+    299.3,
+    402.7
+   ],
+   "confidence": "high",
+   "reason": "text Marker[force] PDF[] (similarity 96)",
+   "crop": "crops/p008_Text_3.png"
+  },
+  {
+   "page": 9,
+   "block": "/page/8/LostText/0",
+   "type": "Text",
+   "box": [
+    40,
+    742.6,
+    572.0,
+    488.4
+   ],
+   "confidence": "high",
+   "reason": "PDF text missing from Marker (9 words): coefficients table journal atmospheric and oceanic technology volume brought",
+   "crop": "crops/p009_LostText_0.png"
+  },
+  {
+   "page": 10,
+   "block": "/page/9/LostText/0",
+   "type": "Text",
+   "box": [
+    40,
+    744.3,
+    572.0,
+    21.5
+   ],
+   "confidence": "high",
+   "reason": "PDF text missing from Marker (7 words): night net july amura and mahrt brought",
+   "crop": "crops/p010_LostText_0.png"
+  },
+  {
+   "page": 11,
+   "block": "/page/10/LostText/0",
+   "type": "Text",
+   "box": [
+    40,
+    742.6,
+    572.0,
+    105.6
+   ],
+   "confidence": "high",
+   "reason": "PDF text missing from Marker (8 words): each bin journal atmospheric and oceanic technology volume",
+   "crop": "crops/p011_LostText_0.png"
+  },
+  {
+   "page": 12,
+   "block": "/page/11/LostText/0",
+   "type": "Text",
+   "box": [
+    40,
+    744.3,
+    572.0,
+    21.5
+   ],
+   "confidence": "high",
+   "reason": "PDF text missing from Marker (7 words): original corrected july amura and mahrt brought",
+   "crop": "crops/p012_LostText_0.png"
+  },
+  {
+   "page": 13,
+   "block": "/page/12/LostText/0",
+   "type": "Text",
+   "box": [
+    40,
+    742.6,
+    572.0,
+    562.4
+   ],
+   "confidence": "high",
+   "reason": "PDF text missing from Marker (8 words): oceanic technol journal atmospheric and oceanic technology volume",
+   "crop": "crops/p013_LostText_0.png"
+  },
+  {
+   "page": 2,
+   "block": "/page/1/Equation/12",
+   "type": "Equation",
+   "box": [
+    388.0,
+    670.8,
+    537.6,
+    642.3
+   ],
+   "reason": "box doesn't line up with PDF text",
+   "latex": "L = - \\frac{\\overline{\\theta_v} \\mu^{*3}}{\\kappa g w' \\theta_v'}. \\quad (3)",
+   "qa_confidence": null,
+   "confidence": "low",
+   "qa_visual": true,
+   "mineru": {
+    "verdict": "agree"
+   },
+   "crop": "crops/p002_Equation_12.png"
+  },
+  {
+   "page": 2,
+   "block": "/page/1/Text/13",
+   "type": "Text",
+   "box": [
+    307.2,
+    636.8,
+    525.1,
+    624.1
+   ],
+   "confidence": "low",
+   "reason": "text Marker[] PDF[] (similarity 69)",
+   "crop": "crops/p002_Text_13.png"
+  },
+  {
+   "page": 2,
+   "block": "/page/1/Equation/15",
+   "type": "Equation",
+   "box": [
+    394.7,
+    534.6,
+    537.6,
+    520.1
+   ],
+   "confidence": "low",
+   "reason": "symbols PDF[] LaTeX[+=]",
+   "latex": "z = Z + d_o, \\quad (4)",
+   "qa_confidence": "high",
+   "mineru": {
+    "verdict": "agree"
+   },
+   "crop": "crops/p002_Equation_15.png"
+  },
+  {
+   "page": 2,
+   "block": "/page/1/Equation/17",
+   "type": "Equation",
+   "box": [
+    367.2,
+    258.2,
+    537.6,
+    242.7
+   ],
+   "confidence": "low",
+   "reason": "symbols PDF[] LaTeX[+=]",
+   "latex": "d_o \\text{ estimated} = d_o + d_o \\text{ error}, \\quad (5)",
+   "qa_confidence": "high",
+   "mineru": {
+    "verdict": "agree"
+   },
+   "crop": "crops/p002_Equation_17.png"
+  },
+  {
+   "page": 2,
+   "block": "/page/1/Equation/19",
+   "type": "Equation",
+   "box": [
+    339.7,
+    185.3,
+    537.6,
+    168.8
+   ],
+   "reason": "box doesn't line up with PDF text",
+   "latex": "z = d_o \\text{ estimated } + Z = d_o + Z + d_o \\text{ error} \\quad (6)",
+   "qa_confidence": null,
+   "confidence": "low",
+   "qa_visual": true,
+   "mineru": {
+    "verdict": "agree"
+   },
+   "crop": "crops/p002_Equation_19.png"
+  },
+  {
+   "page": 2,
+   "block": "/page/1/Equation/9",
+   "type": "Equation",
+   "box": [
+    131.0,
+    99.0,
+    298.7,
+    79.3
+   ],
+   "confidence": "low",
+   "reason": "symbols PDF[] LaTeX[+=v]",
+   "latex": "u^* = (\\overline{u'w'}^2 + \\overline{v'w'}^2)^{1/4}, \\quad (2)",
+   "qa_confidence": "high",
+   "mineru": {
+    "verdict": "agree"
+   },
+   "crop": "crops/p002_Equation_9.png"
+  },
+  {
+   "page": 6,
+   "block": "/page/5/Equation/7",
+   "type": "Equation",
+   "box": [
+    136.5,
+    489.5,
+    298.7,
+    474.0
+   ],
+   "confidence": "low",
+   "reason": "symbols PDF[] LaTeX[+=]",
+   "latex": "\\overline{S^*} = 0.5(S^* \\downarrow + S^* \\uparrow), \\quad (8)",
+   "qa_confidence": "high",
+   "mineru": {
+    "verdict": "agree"
+   },
+   "crop": "crops/p006_Equation_7.png"
+  },
+  {
+   "page": 6,
+   "block": "/page/5/Equation/9",
+   "type": "Equation",
+   "box": [
+    80.8,
+    441.1,
+    298.7,
+    394.0
+   ],
+   "confidence": "low",
+   "reason": "symbols PDF[] LaTeX[=×]",
+   "latex": "S^* \\downarrow = \\frac{\\text{Downward shortwave irradiance inside shield}}{\\text{Downward global shortwave irradiance outside shield}} \\time…",
+   "qa_confidence": "high",
+   "mineru": {
+    "verdict": "agree"
+   },
+   "crop": "crops/p006_Equation_9.png"
+  },
+  {
+   "page": 6,
+   "block": "/page/5/Equation/11",
+   "type": "Equation",
+   "box": [
+    84.5,
+    373.0,
+    298.7,
+    325.2
+   ],
+   "confidence": "low",
+   "reason": "symbols PDF[1] LaTeX[=×]",
+   "latex": "S^* \\uparrow = \\frac{\\text{Upward shortwave irradiance inside shield}}{\\text{Downward global shortwave irradiance outside shield}} \\times 10…",
+   "qa_confidence": "high",
+   "mineru": {
+    "verdict": "agree"
+   },
+   "crop": "crops/p006_Equation_11.png"
+  },
+  {
+   "page": 9,
+   "block": "/page/8/Equation/8",
+   "type": "Equation",
+   "box": [
+    146.9,
+    258.2,
+    298.7,
+    228.2
+   ],
+   "confidence": "low",
+   "reason": "symbols PDF[1] LaTeX[=ρ]",
+   "latex": "X = \\frac{\\text{Rad}}{\\rho C_p T_{\\text{HB}} U}, \\quad (11)",
+   "qa_confidence": "high",
+   "mineru": {
+    "verdict": "agree"
+   },
+   "crop": "crops/p009_Equation_8.png"
+  },
+  {
+   "page": 9,
+   "block": "/page/8/Equation/10",
+   "type": "Equation",
+   "box": [
+    119.3,
+    96.6,
+    298.7,
+    78.3
+   ],
+   "confidence": "low",
+   "reason": "symbols PDF[1] LaTeX[++=]",
+   "latex": "\\text{RE} = C_0 + C_1 X + C_2 X^2 \\cdots, \\quad (12)",
+   "qa_confidence": "high",
+   "mineru": {
+    "verdict": "agree"
+   },
+   "crop": "crops/p009_Equation_10.png"
+  },
+  {
+   "page": 10,
+   "block": "/page/9/Caption/3",
+   "type": "Caption",
+   "box": [
+    69.2,
+    713.6,
+    296.2,
+    693.0
+   ],
+   "confidence": "low",
+   "reason": "text Marker[] PDF[] (similarity 63)",
+   "crop": "crops/p010_Caption_3.png"
+  },
+  {
+   "page": 12,
+   "block": "/page/11/Caption/3",
+   "type": "Caption",
+   "box": [
+    80.8,
+    713.6,
+    284.1,
+    692.2
+   ],
+   "confidence": "low",
+   "reason": "text Marker[] PDF[] (similarity 65)",
+   "crop": "crops/p012_Caption_3.png"
+  },
+  {
+   "page": 2,
+   "block": "/page/1/Equation/7",
+   "type": "Equation",
+   "box": [
+    82.0,
+    276.3,
+    298.7,
+    242.4
+   ],
+   "visual": true,
+   "reason": "box doesn't line up with PDF text",
+   "latex": "\\bar{\\theta} = \\bar{\\theta}_s - \\frac{\\overline{w'\\theta'}}{\\alpha_h k u^*} \\left[ \\ln\\left(\\frac{z - d_o}{z_{oh}}\\right) - \\psi_h\\left(\\fra…",
+   "mineru": {
+    "verdict": "closer",
+    "latex": "\\overline {{\\theta}} = \\overline {{\\theta}} _ {s} - \\frac {\\overline {{w ^ {\\prime} \\theta^ {\\prime}}}}{\\alpha_ {h} \\kappa u ^ {*}} \\left[ \\ln \\left(\\frac {z - d _ {o}}{z _ {o h}}\\right) - \\psi_ {h} \\left(\\frac {z - d _ {o}}{L}\\right) \\right],"
+   },
+   "crop": "crops/p002_Equation_7.png"
+  },
+  {
+   "page": 3,
+   "block": "/page/2/Equation/5",
+   "type": "Equation",
+   "box": [
+    66.1,
+    358.0,
+    298.1,
+    276.6
+   ],
+   "visual": true,
+   "reason": "box doesn't line up with PDF text",
+   "latex": "\\begin{aligned} \\bar{\\theta}(Z + d_{o\\text{ estimated}}) - \\bar{\\theta}(Z + d_o) = \\\\ - \\frac{\\overline{w'\\theta'}}{\\alpha_h \\kappa u^*} \\le…",
+   "mineru": {
+    "verdict": "closer",
+    "latex": "\\begin{array}{l} \\overline {{\\theta}} (Z + d _ {o \\text {estimated}}) - \\overline {{\\theta}} (Z + d _ {o}) = \\\\ \\qquad - \\frac {\\overline {{w ^ {\\prime} \\theta^ {\\prime}}}}{\\alpha_ {h} \\kappa u ^ {*}} \\bigg [ \\ln \\bigg (\\frac {Z + d _ {o \\text {error}}}{z _ {o h}} \\bigg) - \\ln \\bigg (\\frac {Z}{z _ {o h}} \\bigg) \\\\ \\qquad - \\psi_ {h} \\bigg (\\frac {Z + d _ {o \\text {error}}}{L} \\bigg) + \\psi_ {h} \\bigg (\\frac {Z}{L} \\bigg) \\bigg ]. \\end{array}"
+   },
+   "crop": "crops/p003_Equation_5.png"
+  }
+ ]
+}

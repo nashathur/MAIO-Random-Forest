@@ -1,0 +1,262 @@
+{
+ "stats": {
+  "pages": 7,
+  "blocks": 108,
+  "inline_math": 2,
+  "display_math": 7,
+  "text_compared": 66,
+  "equations_compared": 5,
+  "equations_unverifiable": 2,
+  "inline_compared": 0
+ },
+ "counts": {
+  "high": 3,
+  "low": 8,
+  "visual": 2
+ },
+ "pages_without_text_layer": [],
+ "issues": [
+  {
+   "page": 4,
+   "block": "/page/3/Equation/4",
+   "type": "Equation",
+   "box": [
+    78.0,
+    414.4,
+    282.4,
+    398.2
+   ],
+   "confidence": "high",
+   "reason": "symbols PDF[lox] LaTeX[015×]",
+   "latex": "N_u = 0.60 Re^{0.5} Re < 2 \\times 10^4",
+   "mineru": {
+    "verdict": "differs",
+    "latex": "\\begin{array}{l l} N u = 0. 6 0 R e ^ {0. 5} & \\text {for} R e <   2 \\times 1 0 ^ {4} \\\\ N u = 0. 0 3 2 R e ^ {0. 8} & \\text {for} R e > 2 \\times 1 0 ^ {4} \\end{array}"
+   },
+   "crop": "crops/p004_Equation_4.png"
+  },
+  {
+   "page": 4,
+   "block": "/page/3/Equation/5",
+   "type": "Equation",
+   "box": [
+    78.0,
+    396.8,
+    286.2,
+    380.5
+   ],
+   "confidence": "high",
+   "reason": "symbols PDF[Dlox] LaTeX[001×]",
+   "latex": "Nu = 0.032Re^{0.8} Re > 2 \\times 10^4",
+   "mineru": {
+    "verdict": "differs",
+    "latex": "\\begin{array}{l l} N u = 0. 6 0 R e ^ {0. 5} & \\text {for} R e <   2 \\times 1 0 ^ {4} \\\\ N u = 0. 0 3 2 R e ^ {0. 8} & \\text {for} R e > 2 \\times 1 0 ^ {4} \\end{array}"
+   },
+   "crop": "crops/p004_Equation_5.png"
+  },
+  {
+   "page": 4,
+   "block": "/page/3/Equation/5",
+   "type": "Equation",
+   "box": [
+    78.0,
+    396.8,
+    286.2,
+    380.5
+   ],
+   "confidence": "high",
+   "reason": "bold differs: bold in PDF only[NReux] bold in LaTeX only[]",
+   "latex": "Nu = 0.032Re^{0.8} Re > 2 \\times 10^4",
+   "mineru": {
+    "verdict": "differs",
+    "latex": "\\begin{array}{l l} N u = 0. 6 0 R e ^ {0. 5} & \\text {for} R e <   2 \\times 1 0 ^ {4} \\\\ N u = 0. 0 3 2 R e ^ {0. 8} & \\text {for} R e > 2 \\times 1 0 ^ {4} \\end{array}"
+   },
+   "crop": "crops/p004_Equation_5.png"
+  },
+  {
+   "page": 3,
+   "block": "/page/2/Equation/10",
+   "type": "Equation",
+   "box": [
+    385.4,
+    128.0,
+    534.2,
+    111.7
+   ],
+   "confidence": "low",
+   "reason": "symbols PDF[r] LaTeX[τ]",
+   "latex": "\\tau = cV/A h",
+   "qa_confidence": "high",
+   "mineru": {
+    "verdict": "agree"
+   },
+   "crop": "crops/p003_Equation_10.png"
+  },
+  {
+   "page": 3,
+   "block": "/page/2/Equation/10",
+   "type": "Equation",
+   "box": [
+    385.4,
+    128.0,
+    534.2,
+    111.7
+   ],
+   "confidence": "low",
+   "reason": "bold differs: bold in PDF only[AVc] bold in LaTeX only[]",
+   "latex": "\\tau = cV/A h",
+   "qa_confidence": "high",
+   "mineru": {
+    "verdict": "agree"
+   },
+   "crop": "crops/p003_Equation_10.png"
+  },
+  {
+   "page": 4,
+   "block": "/page/3/Equation/4",
+   "type": "Equation",
+   "box": [
+    78.0,
+    414.4,
+    282.4,
+    398.2
+   ],
+   "confidence": "low",
+   "reason": "bold differs: bold in PDF only[NReloux] bold in LaTeX only[]",
+   "latex": "N_u = 0.60 Re^{0.5} Re < 2 \\times 10^4",
+   "mineru": {
+    "verdict": "differs",
+    "latex": "\\begin{array}{l l} N u = 0. 6 0 R e ^ {0. 5} & \\text {for} R e <   2 \\times 1 0 ^ {4} \\\\ N u = 0. 0 3 2 R e ^ {0. 8} & \\text {for} R e > 2 \\times 1 0 ^ {4} \\end{array}"
+   },
+   "crop": "crops/p004_Equation_4.png"
+  },
+  {
+   "page": 4,
+   "block": "/page/3/Text/8",
+   "type": "Text",
+   "box": [
+    41.6,
+    185.4,
+    287.1,
+    87.3
+   ],
+   "confidence": "low",
+   "reason": "text Marker[] PDF[ovete peseted wdspeed] (similarity 97)",
+   "crop": "crops/p004_Text_8.png"
+  },
+  {
+   "page": 5,
+   "block": "/page/4/Equation/13",
+   "type": "Equation",
+   "box": [
+    329.6,
+    372.1,
+    530.3,
+    353.6
+   ],
+   "confidence": "low",
+   "reason": "symbols PDF[ly] LaTeX[1ssvvγ]",
+   "latex": "c^2 = \\gamma R T_{\\text{vs}} \\quad T_{\\text{vs}} = T(1 + 0.51q) \\quad (4)",
+   "qa_confidence": "high",
+   "mineru": {
+    "verdict": "agree"
+   },
+   "crop": "crops/p005_Equation_13.png"
+  },
+  {
+   "page": 5,
+   "block": "/page/4/Equation/13",
+   "type": "Equation",
+   "box": [
+    329.6,
+    372.1,
+    530.3,
+    353.6
+   ],
+   "confidence": "low",
+   "reason": "bold differs: bold in PDF only[c] bold in LaTeX only[]",
+   "latex": "c^2 = \\gamma R T_{\\text{vs}} \\quad T_{\\text{vs}} = T(1 + 0.51q) \\quad (4)",
+   "qa_confidence": "high",
+   "mineru": {
+    "verdict": "agree"
+   },
+   "crop": "crops/p005_Equation_13.png"
+  },
+  {
+   "page": 5,
+   "block": "/page/4/Equation/16",
+   "type": "Equation",
+   "box": [
+    366.1,
+    236.0,
+    533.9,
+    219.3
+   ],
+   "confidence": "low",
+   "reason": "symbols PDF[t] LaTeX[+sv]",
+   "latex": "T'_{vs} = T' + 0.51 Tq' \\quad (5)",
+   "qa_confidence": "high",
+   "mineru": {
+    "verdict": "agree"
+   },
+   "crop": "crops/p005_Equation_16.png"
+  },
+  {
+   "page": 5,
+   "block": "/page/4/Equation/16",
+   "type": "Equation",
+   "box": [
+    366.1,
+    236.0,
+    533.9,
+    219.3
+   ],
+   "confidence": "low",
+   "reason": "bold differs: bold in PDF only[TTTqt] bold in LaTeX only[]",
+   "latex": "T'_{vs} = T' + 0.51 Tq' \\quad (5)",
+   "qa_confidence": "high",
+   "mineru": {
+    "verdict": "agree"
+   },
+   "crop": "crops/p005_Equation_16.png"
+  },
+  {
+   "page": 4,
+   "block": "/page/3/Equation/9",
+   "type": "Equation",
+   "box": [
+    125.9,
+    83.0,
+    287.9,
+    56.2
+   ],
+   "visual": true,
+   "reason": "no usable PDF text",
+   "latex": "\\epsilon_r = \\frac{CaQ_g(1+\\alpha)}{4\\epsilon_0 T_3^3 + h} \\quad (3)",
+   "mineru": {
+    "verdict": "differs",
+    "latex": "\\varepsilon_ {\\mathrm{r}} = \\frac {C a Q _ {\\mathrm{g}} (1 + \\alpha)}{4 \\varepsilon \\sigma T _ {\\mathrm{a}} ^ {3} + h}"
+   },
+   "crop": "crops/p004_Equation_9.png"
+  },
+  {
+   "page": 6,
+   "block": "/page/5/Equation/4",
+   "type": "Equation",
+   "box": [
+    97.1,
+    403.1,
+    283.2,
+    373.8
+   ],
+   "visual": true,
+   "reason": "no usable PDF text",
+   "latex": "\\varepsilon_w = \\int_{n_L}^{n_H} \\frac{(nS_{TT}^n - nS_{TT}^n)}{\\sigma_T^2} d(\\ln n) \\quad (6)",
+   "mineru": {
+    "verdict": "differs",
+    "latex": "\\varepsilon_ {\\mathrm{w}} = \\int_ {n _ {\\mathrm{L}}} ^ {n _ {\\mathrm{H}}} \\frac {(n S _ {\\mathrm{TT}} ^ {\\mathrm{s}} - n S _ {\\mathrm{TT}} ^ {\\mathrm{th}})}{\\sigma_ {\\mathrm{T}} ^ {2}} \\mathrm{d} (\\ln n)"
+   },
+   "crop": "crops/p006_Equation_4.png"
+  }
+ ]
+}

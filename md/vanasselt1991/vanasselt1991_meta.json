@@ -1,0 +1,628 @@
+{
+  "table_of_contents": [
+    {
+      "title": "UvA-DARE (Digital Academic Repository)",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          57.0,
+          101.03999999999999
+        ],
+        [
+          352.0080261230469,
+          101.03999999999999
+        ],
+        [
+          352.0080261230469,
+          121.343994140625
+        ],
+        [
+          57.0,
+          121.343994140625
+        ]
+      ]
+    },
+    {
+      "title": "A rigid fast-response thermometer for atmospheric research",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          57.0,
+          200.396
+        ],
+        [
+          427.1599426269531,
+          200.396
+        ],
+        [
+          427.1599426269531,
+          218.926025390625
+        ],
+        [
+          57.0,
+          218.926025390625
+        ]
+      ]
+    },
+    {
+      "title": "Citation for published version (APA):",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          57.0,
+          447.102
+        ],
+        [
+          251.68499999999997,
+          447.102
+        ],
+        [
+          251.68499999999997,
+          463.50799560546875
+        ],
+        [
+          57.0,
+          463.50799560546875
+        ]
+      ]
+    },
+    {
+      "title": "General rights",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          57.0,
+          647.4979999999999
+        ],
+        [
+          124.355,
+          647.4979999999999
+        ],
+        [
+          124.355,
+          661.0899963378906
+        ],
+        [
+          57.0,
+          661.0899963378906
+        ]
+      ]
+    },
+    {
+      "title": "Disclaimer/Complaints regulations",
+      "heading_level": null,
+      "page_id": 0,
+      "polygon": [
+        [
+          57.0,
+          707.28
+        ],
+        [
+          210.63,
+          707.28
+        ],
+        [
+          210.63,
+          721.0899963378906
+        ],
+        [
+          57.0,
+          721.0899963378906
+        ]
+      ]
+    },
+    {
+      "title": "A rigid fast-response thermometer for \natmospheric research",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          62.59939193725586,
+          78.027
+        ],
+        [
+          459.2221984863281,
+          78.027
+        ],
+        [
+          459.2221984863281,
+          132.0703125
+        ],
+        [
+          62.59939193725586,
+          132.0703125
+        ]
+      ]
+    },
+    {
+      "title": "1. Introduction",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          40.29999923706055,
+          518.502
+        ],
+        [
+          108.273,
+          518.502
+        ],
+        [
+          108.273,
+          532.1987915039062
+        ],
+        [
+          40.29999923706055,
+          532.1987915039062
+        ]
+      ]
+    },
+    {
+      "title": "2. Theory",
+      "heading_level": null,
+      "page_id": 1,
+      "polygon": [
+        [
+          301.08,
+          639.318
+        ],
+        [
+          348.64666748046875,
+          639.318
+        ],
+        [
+          348.64666748046875,
+          652.4987945556641
+        ],
+        [
+          301.08,
+          652.4987945556641
+        ]
+      ]
+    },
+    {
+      "title": "3. Laboratory calibrations",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          24.799999237060547,
+          57.54600000000001
+        ],
+        [
+          141.608,
+          57.54600000000001
+        ],
+        [
+          141.608,
+          71.9896240234375
+        ],
+        [
+          24.799999237060547,
+          71.9896240234375
+        ]
+      ]
+    },
+    {
+      "title": "4. Field experiments",
+      "heading_level": null,
+      "page_id": 4,
+      "polygon": [
+        [
+          24.799999237060547,
+          310.248
+        ],
+        [
+          119.05211639404297,
+          310.248
+        ],
+        [
+          119.05211639404297,
+          323.9896240234375
+        ],
+        [
+          24.799999237060547,
+          323.9896240234375
+        ]
+      ]
+    },
+    {
+      "title": "5. Conclusions",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          42.254,
+          605.375
+        ],
+        [
+          115.55999755859375,
+          605.375
+        ],
+        [
+          115.55999755859375,
+          619.1499786376953
+        ],
+        [
+          42.254,
+          619.1499786376953
+        ]
+      ]
+    },
+    {
+      "title": "References",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          302.059,
+          495.98999999999995
+        ],
+        [
+          358.8907775878906,
+          495.98999999999995
+        ],
+        [
+          358.8907775878906,
+          508.9927978515625
+        ],
+        [
+          302.059,
+          508.9927978515625
+        ]
+      ]
+    },
+    {
+      "title": "Analog devices 1988 Analog Deliices Linear Products \ndatahook p 789",
+      "heading_level": null,
+      "page_id": 5,
+      "polygon": [
+        [
+          302.059,
+          517.6999999999999
+        ],
+        [
+          513.0670776367188,
+          517.6999999999999
+        ],
+        [
+          513.0670776367188,
+          541.5000305175781
+        ],
+        [
+          302.059,
+          541.5000305175781
+        ]
+      ]
+    }
+  ],
+  "page_stats": [
+    {
+      "page_id": 0,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          203
+        ],
+        [
+          "Line",
+          28
+        ],
+        [
+          "Text",
+          13
+        ],
+        [
+          "SectionHeader",
+          5
+        ],
+        [
+          "PageFooter",
+          2
+        ],
+        [
+          "Picture",
+          1
+        ],
+        [
+          "PageHeader",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 1,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          177
+        ],
+        [
+          "Line",
+          73
+        ],
+        [
+          "Text",
+          11
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 2,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          197
+        ],
+        [
+          "Line",
+          81
+        ],
+        [
+          "Text",
+          9
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "Diagram",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 3,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          289
+        ],
+        [
+          "Line",
+          90
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "Equation",
+          3
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 4,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          257
+        ],
+        [
+          "Line",
+          84
+        ],
+        [
+          "Text",
+          10
+        ],
+        [
+          "SectionHeader",
+          2
+        ],
+        [
+          "Figure",
+          2
+        ],
+        [
+          "Caption",
+          2
+        ],
+        [
+          "Equation",
+          2
+        ],
+        [
+          "FigureGroup",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 5,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          247
+        ],
+        [
+          "Line",
+          74
+        ],
+        [
+          "Text",
+          7
+        ],
+        [
+          "SectionHeader",
+          3
+        ],
+        [
+          "ListGroup",
+          3
+        ],
+        [
+          "ListItem",
+          2
+        ],
+        [
+          "Figure",
+          1
+        ],
+        [
+          "Caption",
+          1
+        ],
+        [
+          "Equation",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ],
+        [
+          "FigureGroup",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    },
+    {
+      "page_id": 6,
+      "text_extraction_method": "pdftext",
+      "block_counts": [
+        [
+          "Span",
+          43
+        ],
+        [
+          "Line",
+          11
+        ],
+        [
+          "Text",
+          2
+        ],
+        [
+          "PageHeader",
+          1
+        ],
+        [
+          "PageFooter",
+          1
+        ]
+      ],
+      "block_metadata": {
+        "llm_request_count": 0,
+        "llm_error_count": 0,
+        "llm_tokens_used": 0,
+        "previous_text": "",
+        "previous_type": "",
+        "previous_order": 0
+      }
+    }
+  ],
+  "debug_data_path": "debug_data\\171268_VanAsseltEtAl_1991_MST_RigidFastResponseThermometer"
+}

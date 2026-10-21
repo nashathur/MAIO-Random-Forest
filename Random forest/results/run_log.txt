@@ -1,0 +1,19 @@
+Station: Rural_NL10644, target: o3, features: wd, ws, t, q, hourly_rain, p, n, rh
+Hours read: 35064
+  2016: 8784 hours, missing O3 215, missing meteo 76, negative O3 111
+  2017: 8760 hours, missing O3 285, missing meteo 89, negative O3 6
+  2018: 8760 hours, missing O3 136, missing meteo 62, negative O3 255
+  2019: 8760 hours, missing O3 132, missing meteo 63, negative O3 240
+Hours dropped (missing O3 or meteo): 1049 (3.0%)
+Negative O3 set to 0: 608 hours
+Training hours (2016-2018): 25450, prediction hours (2019): 8565
+R2 score (training data):  0.910
+Feature importance (impurity-based, training):
+  rh           0.485
+  t            0.182
+  wd           0.147
+  p            0.074
+  ws           0.058
+  q            0.023
+  hourly_rain  0.021
+  n            0.009

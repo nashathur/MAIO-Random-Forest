@@ -1,0 +1,67 @@
+{
+ "source_pdf": "D:\\MAIO\\171268_VanAsseltEtAl_1991_MST_RigidFastResponseThermometer.pdf",
+ "pages": {
+  "2": [
+   {
+    "bbox": [
+     0.676,
+     0.849,
+     0.928,
+     0.865
+    ],
+    "latex": "\\tau = c V / \\mathrm{Ah}\\tag{1}"
+   }
+  ],
+  "3": [
+   {
+    "bbox": [
+     0.128,
+     0.509,
+     0.489,
+     0.547
+    ],
+    "latex": "\\begin{array}{l l} N u = 0. 6 0 R e ^ {0. 5} & \\text {for} R e <   2 \\times 1 0 ^ {4} \\\\ N u = 0. 0 3 2 R e ^ {0. 8} & \\text {for} R e > 2 \\times 1 0 ^ {4} \\end{array}\\tag{2}"
+   },
+   {
+    "bbox": [
+     0.214,
+     0.903,
+     0.49,
+     0.936
+    ],
+    "latex": "\\varepsilon_ {\\mathrm{r}} = \\frac {C a Q _ {\\mathrm{g}} (1 + \\alpha)}{4 \\varepsilon \\sigma T _ {\\mathrm{a}} ^ {3} + h}\\tag{3}"
+   }
+  ],
+  "4": [
+   {
+    "bbox": [
+     0.58,
+     0.557,
+     0.926,
+     0.574
+    ],
+    "latex": "c ^ {2} = \\gamma R T _ {\\mathrm{vs}} \\quad T _ {\\mathrm{vs}} = T (1 + 0. 5 1 q)\\tag{4}"
+   },
+   {
+    "bbox": [
+     0.646,
+     0.718,
+     0.928,
+     0.735
+    ],
+    "latex": "T _ {\\mathrm{vs}} ^ {\\prime} = T ^ {\\prime} + 0. 5 1 T q ^ {\\prime}\\tag{5}"
+   }
+  ],
+  "5": [
+   {
+    "bbox": [
+     0.168,
+     0.519,
+     0.497,
+     0.554
+    ],
+    "latex": "\\varepsilon_ {\\mathrm{w}} = \\int_ {n _ {\\mathrm{L}}} ^ {n _ {\\mathrm{H}}} \\frac {(n S _ {\\mathrm{TT}} ^ {\\mathrm{s}} - n S _ {\\mathrm{TT}} ^ {\\mathrm{th}})}{\\sigma_ {\\mathrm{T}} ^ {2}} \\mathrm{d} (\\ln n)\\tag{6}"
+   }
+  ]
+ }
+}
