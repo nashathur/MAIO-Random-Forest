@@ -299,7 +299,7 @@ Run with: `conda run -n college python D:\MAIO\random-forest\scripts\randomfores
 # Random forest model for O3 at Cabauw-Wielsekade (NL10644), steps 3-10.
 # Train on 2016-2018 with 8 meteorological variables, predict 2019, evaluate,
 # vary the number of trees (step 9) and use one variable at a time (step 10).
-# Run: conda run -n college python rf_o3_cabauw_all.py
+# Run: conda run -n college python randomforest_o3_cabauw.py
 import os
 import numpy as np
 import pandas as pd
