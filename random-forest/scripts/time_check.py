@@ -1,9 +1,12 @@
 # Check the time convention of the Cabauw data: no summer-time shift, and where the radiation peak falls.
 import pandas as pd
+import os
+RF_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+RAW_DIR = os.path.join(RF_DIR, "data", "raw")
 
 frames = []
 for year in [2016, 2017, 2018, 2019]:
-    frames.append(pd.read_csv(rf"D:\MAIO\Rural_NL10644\Rural_NL10644_{year}.csv", sep=";", na_values=["NA"], low_memory=False))
+    frames.append(pd.read_csv(os.path.join(RAW_DIR, "Rural_NL10644", f"Rural_NL10644_{year}.csv"), sep=";", na_values=["NA"], low_memory=False))
 df = pd.concat(frames, ignore_index=True)
 df["date"] = pd.to_datetime(df["date"])
 df["date_end"] = pd.to_datetime(df["date_end"])

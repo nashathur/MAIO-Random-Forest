@@ -8,9 +8,11 @@ from scipy.stats import gaussian_kde
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+RF_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+RAW_DIR = os.path.join(RF_DIR, "data", "raw")
 
 # ---------------- settings ----------------
-OUT_DIR = r"D:\MAIO\results"
+OUT_DIR = os.path.join(RF_DIR, "results")
 UNIT = "µg m$^{-3}$"
 
 # ---------------- read results of steps 3-6 ----------------

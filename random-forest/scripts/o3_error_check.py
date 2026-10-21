@@ -3,13 +3,16 @@
 # Check 1: jump from the previous hour; spike = jump up and back down (or down and back up).
 # Check 2: difference with Wekerom (NL10738) at the same hour.
 import pandas as pd
+import os
+RF_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+RAW_DIR = os.path.join(RF_DIR, "data", "raw")
 
-OUT_DIR = r"D:\MAIO\results"
+OUT_DIR = os.path.join(RF_DIR, "results")
 frames_c = []
 frames_w = []
 for year in [2016, 2017, 2018, 2019]:
-    frames_c.append(pd.read_csv(rf"D:\MAIO\Rural_NL10644\Rural_NL10644_{year}.csv", sep=";", na_values=["NA"], low_memory=False))
-    frames_w.append(pd.read_csv(rf"D:\MAIO\Rural_NL10738\Rural_NL10738_{year}.csv", sep=";", na_values=["NA"], low_memory=False))
+    frames_c.append(pd.read_csv(os.path.join(RAW_DIR, "Rural_NL10644", f"Rural_NL10644_{year}.csv"), sep=";", na_values=["NA"], low_memory=False))
+    frames_w.append(pd.read_csv(os.path.join(RAW_DIR, "Rural_NL10738", f"Rural_NL10738_{year}.csv"), sep=";", na_values=["NA"], low_memory=False))
 cab = pd.concat(frames_c, ignore_index=True)[["date", "o3", "no", "t", "q", "ws", "wd"]]
 wek = pd.concat(frames_w, ignore_index=True)[["date", "o3"]].rename(columns={"o3": "o3_wekerom"})
 df = cab.merge(wek, on="date", how="left")
@@ -61,4 +64,4 @@ print(df.loc[df["diff_wek"].abs().sort_values(ascending=False).index[:10], cols]
 print("\nThe 10 highest O3 hours with their checks:")
 print(df.nlargest(10, "o3")[cols].round(1).to_string(index=False))
 
-df[cols].to_csv(f"{OUT_DIR}\\o3_error_check_cabauw.csv", index=False, float_format="%.2f")
+df[cols].to_csv(os.path.join(OUT_DIR, "o3_error_check_cabauw.csv"), index=False, float_format="%.2f")

@@ -1,0 +1,17 @@
+# LaTeX build files
+random-forest/report/*.aux
+random-forest/report/*.log
+random-forest/report/*.out
+random-forest/report/*.synctex.gz
+random-forest/report/*.fls
+random-forest/report/*.fdb_latexmk
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store

@@ -10,11 +10,13 @@ from sklearn.ensemble import RandomForestRegressor
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+RF_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+RAW_DIR = os.path.join(RF_DIR, "data", "raw")
 
 # ======================= settings =======================
 STATION = "Rural_NL10644"
-DATA_DIR = rf"D:\MAIO\{STATION}"
-OUT_DIR = r"D:\MAIO\results"
+DATA_DIR = os.path.join(RAW_DIR, STATION)
+OUT_DIR = os.path.join(RF_DIR, "results")
 TARGET = "o3"
 FEATURES = ["wd", "ws", "t", "q", "hourly_rain", "p", "n", "rh"]
 TRAIN_YEARS = [2016, 2017, 2018]

@@ -3,8 +3,10 @@
 import glob
 import os
 import pandas as pd
+RF_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+RAW_DIR = os.path.join(RF_DIR, "data", "raw")
 
-BASE = r"D:\MAIO"
+BASE = RAW_DIR
 COMPONENTS = ["no2", "nox", "no", "o3", "ox", "pm10", "pm25", "bc", "co", "nh3", "so2"]
 METEO = ["wd", "ws", "t", "q", "hourly_rain", "p", "n", "rh"]
 
@@ -48,4 +50,4 @@ neg = res.groupby("station")[[c + "_neg" for c in ["no2", "nox", "o3", "pm10", "
 mean = res.groupby("station")[[c + "_mean" for c in ["no2", "nox", "o3", "pm10", "pm25"]]].mean().round(1)
 print(pd.concat([neg, mean], axis=1).to_string())
 
-res.to_csv(os.path.join(BASE, "data_availability.csv"), index=False)
+res.to_csv(os.path.join(RF_DIR, "results", "data_availability.csv"), index=False)

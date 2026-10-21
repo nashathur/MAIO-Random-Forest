@@ -1,7 +1,10 @@
 import glob
 import pandas as pd
+import os
+RF_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+RAW_DIR = os.path.join(RF_DIR, "data", "raw")
 
-fs = sorted(glob.glob(r"D:\MAIO\Street_NL10639\*.csv"))
+fs = sorted(glob.glob(os.path.join(RAW_DIR, "Street_NL10639", "*.csv")))
 df = pd.concat([pd.read_csv(f, sep=";", na_values=["NA"], low_memory=False) for f in fs])
 df["date"] = pd.to_datetime(df["date"])
 df["hour"] = df["date"].dt.hour

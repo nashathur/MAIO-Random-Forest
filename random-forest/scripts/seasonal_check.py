@@ -1,10 +1,13 @@
 # How large is the seasonal variation of O3 at Cabauw compared with other time scales?
 import pandas as pd
+import os
+RF_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+RAW_DIR = os.path.join(RF_DIR, "data", "raw")
 
 STATION = "Rural_NL10644"
 frames = []
 for year in [2016, 2017, 2018, 2019]:
-    frames.append(pd.read_csv(rf"D:\MAIO\{STATION}\{STATION}_{year}.csv", sep=";", na_values=["NA"], low_memory=False))
+    frames.append(pd.read_csv(os.path.join(RAW_DIR, STATION, f"{STATION}_{year}.csv"), sep=";", na_values=["NA"], low_memory=False))
 df = pd.concat(frames, ignore_index=True)
 df["date"] = pd.to_datetime(df["date"])
 df["year"] = df["date"].dt.year

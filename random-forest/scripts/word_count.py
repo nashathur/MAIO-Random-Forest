@@ -1,7 +1,10 @@
 # Rough word count of abstract.tex (text, captions, references; excludes comments, preamble and appendix).
 import re
+import os
+RF_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+RAW_DIR = os.path.join(RF_DIR, "data", "raw")
 
-with open(r"D:\MAIO\abstract.tex", encoding="utf-8") as f:
+with open(os.path.join(RF_DIR, "report", "abstract.tex"), encoding="utf-8") as f:
     tex = f.read()
 
 body = tex.split(r"\begin{document}")[1].split(r"\clearpage")[0]

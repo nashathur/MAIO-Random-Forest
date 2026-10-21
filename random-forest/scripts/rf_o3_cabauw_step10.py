@@ -1,21 +1,24 @@
-# Step 9: effect of the number of trees (n_estimators) on the random forest O3 model at Cabauw.
-# Same data, cleaning and settings as rf_o3_cabauw.py; only n_estimators is changed.
-# Run: conda run -n college python rf_o3_cabauw_step9.py
+# Step 10: random forest O3 model at Cabauw with one meteorological variable at a time.
+# Same data, cleaning and settings as rf_o3_cabauw.py (n_estimators = 30).
+# All runs use the same hours (rows with all 8 variables present), so only the variable differs.
+# Run: conda run -n college python rf_o3_cabauw_step10.py
 import os
 import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
+RF_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+RAW_DIR = os.path.join(RF_DIR, "data", "raw")
 
 # ---------------- settings ----------------
 STATION = "Rural_NL10644"
-DATA_DIR = rf"D:\MAIO\{STATION}"
-OUT_DIR = r"D:\MAIO\results"
+DATA_DIR = os.path.join(RAW_DIR, STATION)
+OUT_DIR = os.path.join(RF_DIR, "results")
 TARGET = "o3"
 FEATURES = ["wd", "ws", "t", "q", "hourly_rain", "p", "n", "rh"]
 TRAIN_YEARS = [2016, 2017, 2018]
 PRED_YEAR = 2019
 NEGATIVE_TO_ZERO = True
-N_TREES_LIST = [10, 30, 100, 300]
+N_TREES = 30
 
 # ---------------- read data (as in step 3) ----------------
 frames = []
@@ -32,20 +35,24 @@ if NEGATIVE_TO_ZERO:
     clean[TARGET] = clean[TARGET].clip(lower=0)
 train = clean[clean["year"].isin(TRAIN_YEARS)]
 pred = clean[clean["year"] == PRED_YEAR]
-x_train, y_train = train[FEATURES].values, train[TARGET].values
-x_pred, y_obs = pred[FEATURES].values, pred[TARGET].values
+y_train = train[TARGET].values
+y_obs = pred[TARGET].values
 
-# ---------------- loop over number of trees ----------------
+# ---------------- runs: all 8 variables, then each variable alone ----------------
+runs = [("all 8", FEATURES)]
+for var in FEATURES:
+    runs.append((var, [var]))
+
 rows = []
-for n_trees in N_TREES_LIST:
-    model = RandomForestRegressor(n_estimators=n_trees, min_samples_leaf=5, random_state=42)
-    model.fit(x_train, y_train)
-    for period, obs, mod in [("2016-2018 (training)", y_train, model.predict(x_train)),
-                             ("2019 (prediction)", y_obs, model.predict(x_pred))]:
+for name, variables in runs:
+    model = RandomForestRegressor(n_estimators=N_TREES, min_samples_leaf=5, random_state=42)
+    model.fit(train[variables].values, y_train)
+    for period, obs, mod in [("2016-2018 (training)", y_train, model.predict(train[variables].values)),
+                             ("2019 (prediction)", y_obs, model.predict(pred[variables].values))]:
         diff = mod - obs
         r = np.corrcoef(obs, mod)[0, 1]
         rows.append({
-            "n_estimators": n_trees,
+            "variables": name,
             "period": period,
             "n": len(obs),
             "mean obs": obs.mean(),
@@ -62,10 +69,10 @@ for n_trees in N_TREES_LIST:
             "max obs": obs.max(),
             "max pred": mod.max(),
         })
-    print(f"n_estimators = {n_trees} done")
+    print(f"{name} done")
 
 table = pd.DataFrame(rows)
-table.to_csv(os.path.join(OUT_DIR, "step9_n_estimators.csv"), index=False, float_format="%.3f")
+table.to_csv(os.path.join(OUT_DIR, "step10_single_variables.csv"), index=False, float_format="%.3f")
 pd.set_option("display.width", 250)
 pd.set_option("display.max_columns", 30)
 print()
