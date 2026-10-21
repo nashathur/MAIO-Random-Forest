@@ -1,7 +1,7 @@
 # Next session: study the hand-in for the oral discussion
 
 Paste or point the new session to this file first:
-`D:\MAIO\Random forest\NEXT_SESSION.md`
+`D:\MAIO\random-forest\notes\NEXT_SESSION.md`
 
 ## Goal
 Prepare for a **10-minute oral discussion** with the lecturer (Guus Velders) about my submitted extended abstract. The lecturer checks that I can **explain and understand** what I wrote; the grade can drop by up to 3 points (or rise by 1). I want to **study and practise**, not change the hand-in.
@@ -25,22 +25,22 @@ Prepare for a **10-minute oral discussion** with the lecturer (Guus Velders) abo
 4. Finish with a 10-minute mock discussion.
 
 ## Files
-All in `D:\MAIO\Random forest\` unless noted.
+Paths relative to `D:\MAIO\random-forest\` unless noted.
 
 | File | What |
 |---|---|
 | `C:\Users\thurs\Downloads\MAIO_Hand_In_Thursina-Ahsan_8256675.pdf` | **The submitted hand-in** (abstract p. 1–2, code p. 3–5) |
-| `oral_prep.md` | Study notes: summary, concepts, physics, likely questions, weak spots, numbers card |
-| `oral_prep_codex_review.md` | Codex accuracy review of `oral_prep.md` (if present; see status below) |
-| `project_summary.md` | Full record of decisions, results and abstract structure (7 Oct; paths in it say `D:\MAIO\`, files are now in `D:\MAIO\Random forest\`) |
-| `Handin_Random_Forest_2026.pdf` | The assignment (steps 1–15, grading) |
-| `abstract.tex` / `abstract.pdf` | Local 7 Oct draft (older than the hand-in; contains `% TODO` notes) |
-| `randomforest_o3_cabauw.py` | The appendix code (steps 3–10 in one script) |
+| `notes\oral_prep.md` | Study notes: summary, concepts, physics, likely questions, weak spots, numbers card |
+| `notes\oral_prep_codex_review.md` | Codex accuracy review of `oral_prep.md` (if present; see status below) |
+| `notes\project_summary.md` | Full record of decisions, results and abstract structure (7 Oct) |
+| `report\Handin_Random_Forest_2026.pdf` | The assignment (steps 1–15, grading) |
+| `report\abstract.tex` / `report\abstract.pdf` | Local 7 Oct draft (older than the hand-in; contains `% TODO` notes) |
+| `scripts\randomforest_o3_cabauw.py` | The appendix code (steps 3–10 in one script) |
 | `results\` | Figures and result tables: `statistics_step8.csv`, `step9_n_estimators.csv`, `step10_single_variables.csv`, `fig_daily_cycle_2019_values.csv`, `run_log.txt` |
-| `Rural_NL10644\` | Cabauw data 2016–2019 (other station folders too) |
-| Exploration scripts | `seasonal_check.py`, `o3_error_check.py`, `rural_compare.py`, `o3_vs_no2.py`, `time_check.py`, … (background numbers in `oral_prep.md` come from these) |
+| `data\raw\Rural_NL10644\` | Cabauw data 2016–2019 (other station folders in `data\raw\` too) |
+| Exploration scripts (`scripts\`) | `seasonal_check.py`, `o3_error_check.py`, `rural_compare.py`, `o3_vs_no2.py`, `time_check.py`, … (background numbers in `oral_prep.md` come from these) |
 
-**Paths note:** the files were moved from `D:\MAIO\` to `D:\MAIO\Random forest\`. The scripts still point to `D:\MAIO\...`; change `DATA_DIR` / `OUT_DIR` at the top before rerunning anything.
+**Paths note:** the scripts use paths relative to their own location: data is read from `data\raw\` and output is written to `results\`. They run from any clone without edits.
 
 ## Key facts (quick reference)
 - Station: Cabauw-Wielsekade NL10644, rural background, 51.97 N 4.92 E (Lopik, Utrecht)
@@ -55,7 +55,7 @@ All in `D:\MAIO\Random forest\` unless noted.
 
 ## Status at end of previous session (13 Oct 2026)
 - Hand-in submitted. Prep notes written and updated to the submitted version.
-- Codex reviewed `oral_prep.md` (full review: `oral_prep_codex_review.md`). All 18 findings were checked; the numerical ones were re-verified with `verify_codex.py` (college env). All were applied to `oral_prep.md`:
+- Codex reviewed `oral_prep.md` (full review: `oral_prep_codex_review.md`). All 18 findings were checked; the numerical ones were re-verified with `scripts\verify_codex.py` (college env). All were applied to `oral_prep.md`:
   - **Numbers:** predicted mean is 44.4, not 44.5 (exact 44.448); bias −3.48 ≈ −3.5, so the hand-in text's −3.4 is the error, Fig. 2's −3.5 is right. Prediction at the observed peak hour is 163.4.
   - **Wind data:** the "missing wind direction at 1.3 vs 3.3 m/s" figure was from Erzeijstraat; at Cabauw it's 1.3 vs 4.1 m/s, and "missing = calm" is an inference, not documented.
   - **Random forest:** this model uses bootstrap samples of hours, but all 8 variables at every split (`max_features` default); RF doesn't strictly need complete predictors (scikit-learn 1.9 supports NaN), dropping was a choice; train–test gap isn't purely memorisation.

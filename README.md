@@ -30,5 +30,3 @@ python random-forest/scripts/randomforest_o3_cabauw.py
 ```
 
 Data is read from `random-forest/data/raw/` and output is written to `random-forest/results/`.
-
-The notes in `random-forest/notes/` still refer to the old `D:\MAIO\` layout.

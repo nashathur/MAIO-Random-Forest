@@ -1,7 +1,7 @@
 # Random forest O3 hand-in: project summary
 
 Course hand-in: *Handin Random Forest analyses air quality* (G. Velders, 2 Sep 2026)
-Working folder: `D:\MAIO` · Python env: `college` · Last update: 7 Oct 2026
+Working folder: `D:\MAIO\random-forest` · Python env: `college` · Last update: 7 Oct 2026
 
 ---
 
@@ -242,7 +242,7 @@ Variance of hourly O3 explained by month alone: 23%; by hour of day alone: 16%. 
 - [ ] Single-variable result with physical/chemical explanation (step 10)
 - [ ] ≤ 2 figures, axis labels with units, captions explaining the lines
 - [ ] ≤ 3 references
-- [ ] Code appendix (`rf_o3_cabauw_all.py`)
+- [ ] Code appendix (`randomforest_o3_cabauw.py`)
 - [ ] ≤ 900 words, ≤ 2 A4 pages
 
 ---
@@ -263,15 +263,15 @@ Variance of hourly O3 explained by month alone: 23%; by hour of day alone: 16%. 
 
 ## 6. Files
 
-### Scripts in `D:\MAIO`
+### Scripts in `D:\MAIO\random-forest\scripts`
 | File | Role |
 |---|---|
-| **`rf_o3_cabauw_all.py`** | **Appendix code: steps 3–10 in one linear script** |
+| **`randomforest_o3_cabauw.py`** | **Appendix code: steps 3–10 in one linear script** |
 | `rf_o3_cabauw.py`, `rf_o3_cabauw_step7_8.py`, `rf_o3_cabauw_step9.py`, `rf_o3_cabauw_step10.py` | The same work as separate scripts (kept) |
 | `o3_error_check.py`, `rural_compare.py` | Optional appendix (error check; station NOx comparison) |
 | `check_data.py`, `gaps_check.py`, `neg_o3_check.py`, `summary_stats.py`, `meteo_compare.py`, `rural_peaks.py`, `o3_vs_no2.py`, `seasonal_check.py` | Exploration (kept for now; three are about Erzeijstraat) |
 
-### Outputs in `D:\MAIO\results`
+### Outputs in `D:\MAIO\random-forest\results`
 | File | Content |
 |---|---|
 | `fig_daily_cycle_2019.png` | Figure A |
@@ -291,9 +291,9 @@ Variance of hourly O3 explained by month alone: 23%; by hour of day alone: 16%. 
 
 ---
 
-## 7. Appendix code: `rf_o3_cabauw_all.py`
+## 7. Appendix code: `randomforest_o3_cabauw.py`
 
-Run with: `conda run -n college python D:\MAIO\rf_o3_cabauw_all.py`
+Run with: `conda run -n college python D:\MAIO\random-forest\scripts\randomforest_o3_cabauw.py`
 
 ```python
 # Random forest model for O3 at Cabauw-Wielsekade (NL10644), steps 3-10.
@@ -308,11 +308,13 @@ from sklearn.ensemble import RandomForestRegressor
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+RF_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+RAW_DIR = os.path.join(RF_DIR, "data", "raw")
 
 # ======================= settings =======================
 STATION = "Rural_NL10644"
-DATA_DIR = rf"D:\MAIO\{STATION}"
-OUT_DIR = r"D:\MAIO\results"
+DATA_DIR = os.path.join(RAW_DIR, STATION)
+OUT_DIR = os.path.join(RF_DIR, "results")
 TARGET = "o3"
 FEATURES = ["wd", "ws", "t", "q", "hourly_rain", "p", "n", "rh"]
 TRAIN_YEARS = [2016, 2017, 2018]

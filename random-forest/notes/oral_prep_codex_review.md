@@ -1,10 +1,10 @@
-No files changed; no Python run. I checked the PDFs with `pdftotext`, read the CSVs, and checked auxiliary numbers against the archived station CSVs using PowerShell. Line numbers below refer to [oral_prep.md](</D:/MAIO/Random forest/oral_prep.md>).
+No files changed; no Python run. I checked the PDFs with `pdftotext`, read the CSVs, and checked auxiliary numbers against the archived station CSVs using PowerShell. Line numbers below refer to [oral_prep.md](</D:/MAIO/random-forest/notes/oral_prep.md>).
 
 **CONFIRMED** means checked against documentary or numerical evidence; **UNVERIFIED** marks scientific interpretation not established by this experiment.
 
 1. **CONFIRMED — L35: “with random variable choice.”**  
    **Wrong:** This suggests random subsets of predictors at each split, which this implementation does not request.  
-   **Evidence:** `randomforest_o3_cabauw.py:68` leaves `max_features` at its default: all eight predictors are considered. Bootstrap sampling supplies the main randomness; feature order and tied splits can also be random. [scikit-learn documentation](https://scikit-learn.org/1.5/modules/generated/sklearn.ensemble.RandomForestRegressor.html).  
+   **Evidence:** `randomforest_o3_cabauw.py:70` leaves `max_features` at its default: all eight predictors are considered. Bootstrap sampling supplies the main randomness; feature order and tied splits can also be random. [scikit-learn documentation](https://scikit-learn.org/1.5/modules/generated/sklearn.ensemble.RandomForestRegressor.html).  
    **Correct:** Each tree uses a bootstrap sample of training hours, while this configuration considers all eight variables at each split.
 
 2. **UNVERIFIED — L60: “r is always positive (pred vs obs).”**  
@@ -29,7 +29,7 @@ No files changed; no Python run. I checked the PDFs with `pdftotext`, read the C
 
 6. **CONFIRMED — L22, L131: “The RF needs complete (weather, O3) pairs.”**  
    **Wrong:** This presents complete meteorological inputs as a universal RF requirement. Modern scikit-learn random forests support missing predictor values; other workflows can impute predictors. Missing observed targets are a separate issue.  
-   **Evidence:** `randomforest_o3_cabauw.py:51` explicitly chooses complete-case filtering. [scikit-learn documents native NaN support](https://scikit-learn.org/1.5/modules/generated/sklearn.ensemble.RandomForestRegressor.html). The version used for the original run was not verified.  
+   **Evidence:** `randomforest_o3_cabauw.py:53` explicitly chooses complete-case filtering. [scikit-learn documents native NaN support](https://scikit-learn.org/1.5/modules/generated/sklearn.ensemble.RandomForestRegressor.html). The version used for the original run was not verified.  
    **Correct:** This workflow chose to drop incomplete hours; fitting and observed-target evaluation require available O₃ targets, while missing predictors have alternative treatments.
 
 7. **CONFIRMED — L38, L101: “195 … → predictions top out around 168.”**  
@@ -44,7 +44,7 @@ No files changed; no Python run. I checked the PDFs with `pdftotext`, read the C
 
 9. **CONFIRMED — L22: missing-direction wind speed “1.3 vs 3.3 m/s”; L131: “missing wind direction = calm wind.”**  
    **Wrong:** The comparison belongs to Erzeijstraat, not Cabauw. Lower wind speeds do not establish that every missing direction denotes calm conditions.  
-   **Evidence:** Archived 2016–2019 CSVs give Erzeijstraat means **1.3397/3.3004 m s⁻¹**, versus Cabauw **1.2847/4.1091 m s⁻¹**. `gaps_check.py:5` selects `Street_NL10639`. Assignment Table 1 specifies **0** for calm direction, without defining NA as calm.  
+   **Evidence:** Archived 2016–2019 CSVs give Erzeijstraat means **1.3397/3.3004 m s⁻¹**, versus Cabauw **1.2847/4.1091 m s⁻¹**. `gaps_check.py:8` selects `Street_NL10639`. Assignment Table 1 specifies **0** for calm direction, without defining NA as calm.  
    **Correct:** At Cabauw, missing direction is associated with lower wind speeds—1.3 versus 4.1 m s⁻¹—but its exact missing-value cause is not established here.
 
 10. **CONFIRMED — L49, L55: r describes “pattern/timing”; r² differs from R² “because R² also penalises the bias.”**  
@@ -104,8 +104,8 @@ No files changed; no Python run. I checked the PDFs with `pdftotext`, read the C
 ### Suggestions
 
 - **Check missing-hour representativeness.** `fig_daily_cycle_2019_values.csv:4` contains only 272 samples at 02:00, compared with roughly 355–365 at most other hours. The small overall missing percentage does not guarantee an unbiased hourly climatology.
-- **Distinguish retrospective prediction from operational forecasting.** `randomforest_o3_cabauw.py:62–74` uses contemporaneous meteorological observations. Adding lagged ozone would require an explicit forecast horizon and availability rules to avoid unintended information leakage.
-- **Check AI-use scope against the assignment.** Coding assistance is allowed with disclosure, while assignment p. 2 prohibits AI use for the extended abstract. The disclosure and L122 cannot independently establish how the prose was produced. Source: :codex-file-citation{path="D:/MAIO/Random forest/Handin_Random_Forest_2026.pdf" purpose="source"}
-- **Check paths before a future rerun.** `randomforest_o3_cabauw.py:16–17` references `D:\MAIO\Rural_NL10644` and writes to `D:\MAIO\results`; the reviewed archives and results are now under `D:\MAIO\Random forest`. No rerun or path edits were made.
+- **Distinguish retrospective prediction from operational forecasting.** `randomforest_o3_cabauw.py:64–76` uses contemporaneous meteorological observations. Adding lagged ozone would require an explicit forecast horizon and availability rules to avoid unintended information leakage.
+- **Check AI-use scope against the assignment.** Coding assistance is allowed with disclosure, while assignment p. 2 prohibits AI use for the extended abstract. The disclosure and L122 cannot independently establish how the prose was produced. Source: :codex-file-citation{path="D:/MAIO/random-forest/report/Handin_Random_Forest_2026.pdf" purpose="source"}
+- **Check paths before a future rerun.** Resolved: `randomforest_o3_cabauw.py:18–19` now reads from `random-forest/data/raw/Rural_NL10644` and writes to `random-forest/results`, relative to the script location.
 
 **Overall verdict:** The numerical foundation is mostly sound, but several central machine-learning explanations and physical attributions need correction before the notes are memorised.
