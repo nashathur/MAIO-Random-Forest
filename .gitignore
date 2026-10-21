@@ -6,6 +6,9 @@ random-forest/report/*.synctex.gz
 random-forest/report/*.fls
 random-forest/report/*.fdb_latexmk
 
+# Separate repo (MAIO-Tower-Project)
+Project/
+
 # Python
 __pycache__/
 *.pyc
